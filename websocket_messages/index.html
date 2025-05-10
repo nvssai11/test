@@ -13,22 +13,22 @@
       
       
       
-        <link rel="prev" href="../overview/">
+        <link rel="prev" href="../puzzle_completion/">
       
       
-        <link rel="next" href="../drag_and_drop/">
+        <link rel="next" href="../api_reference/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Socket Connection - Jigsaw Puzzle Application</title>
+        <title>WebSocket Messages - Jigsaw Puzzle Application</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
       
 
@@ -47,9 +47,9 @@
       
     
     
-      <link rel="stylesheet" href="../../styles/custom.css">
+      <link rel="stylesheet" href="../styles/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#puzzle-completion-and-feedback" class="md-skip">
+        <a href="#websocket-messages" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Jigsaw Puzzle Application" class="md-header__button md-logo" aria-label="Jigsaw Puzzle Application" data-md-component="logo">
+    <a href=".." title="Jigsaw Puzzle Application" class="md-header__button md-logo" aria-label="Jigsaw Puzzle Application" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Socket Connection
+              WebSocket Messages
             
           </span>
         </div>
@@ -182,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Jigsaw Puzzle Application" class="md-nav__button md-logo" aria-label="Jigsaw Puzzle Application" data-md-component="logo">
+    <a href=".." title="Jigsaw Puzzle Application" class="md-nav__button md-logo" aria-label="Jigsaw Puzzle Application" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -200,7 +200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -260,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -283,7 +283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/real_time_interaction/" class="md-nav__link">
+      <a href="../real_time_interaction/" class="md-nav__link">
         
   
   
@@ -353,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../overview_workflow/" class="md-nav__link">
         
   
   
@@ -373,32 +373,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Socket Connection
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../socket_connection/" class="md-nav__link">
         
   
   
@@ -409,44 +387,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#client-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Actions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Server Actions
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -502,10 +442,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../websocket_messages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    WebSocket Messages
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -516,6 +478,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Events
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -535,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api_reference/" class="md-nav__link">
+      <a href="../api_reference/" class="md-nav__link">
         
   
   
@@ -557,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -599,18 +590,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#client-actions" class="md-nav__link">
+  <a href="#summary-of-events" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Actions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Server Actions
+      Summary of Events
     </span>
   </a>
   
@@ -632,17 +614,39 @@
 
 
 
-<h1 id="puzzle-completion-and-feedback">Puzzle Completion and Feedback<a class="headerlink" href="#puzzle-completion-and-feedback" title="Permanent link">&para;</a></h1>
-<h2 id="client-actions">Client Actions<a class="headerlink" href="#client-actions" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Validates the puzzle's correctness by comparing piece positions to the solution.</li>
-<li>Triggers success or failure feedback based on the result.</li>
-</ul>
-<h2 id="server-actions">Server Actions<a class="headerlink" href="#server-actions" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Broadcasts puzzle completion status (success or failure) to all participants.</li>
-<li>Updates the state for future interactions.</li>
-</ul>
+<h1 id="websocket-messages">WebSocket Messages<a class="headerlink" href="#websocket-messages" title="Permanent link">&para;</a></h1>
+<h2 id="summary-of-events">Summary of Events<a class="headerlink" href="#summary-of-events" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Triggered By</th>
+<th>Purpose</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>piece_dropped</code></td>
+<td>Client</td>
+<td>Notify about a piece movement</td>
+<td>Updates puzzle state for all participants</td>
+</tr>
+<tr>
+<td><code>puzzle_solved</code></td>
+<td>Client</td>
+<td>Indicate puzzle completion</td>
+<td>Displays a success message</td>
+</tr>
+<tr>
+<td><code>puzzle_failed</code></td>
+<td>Client</td>
+<td>Indicate incorrect puzzle assembly</td>
+<td>Displays a failure message</td>
+</tr>
+</tbody>
+</table>
+<p>These events ensure real-time synchronization and interactivity.</p>
 
 
 
@@ -691,12 +695,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../scripts/custom.js"></script>
+        <script src="../scripts/custom.js"></script>
       
     
   </body>
