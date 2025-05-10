@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../drag_and_drop/">
+      
+      
+        <link rel="next" href="../websocket_messages/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>puzzle completion - Jigsaw Puzzle Application</title>
+        <title>Puzzle Completion - Jigsaw Puzzle Application</title>
       
     
     
@@ -63,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#puzzle-completion-and-feedback" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-               puzzle completion
+              Puzzle Completion
             
           </span>
         </div>
@@ -187,7 +196,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../docs/features/overview.md" class="md-tabs__link">
+        <a href="../../features/overview/" class="md-tabs__link">
           
   
   
@@ -203,11 +212,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../docs/workflow/overview.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -362,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/features/overview.md" class="md-nav__link">
+      <a href="../../features/overview/" class="md-nav__link">
         
   
   
@@ -385,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/features/real_time_interaction.md" class="md-nav__link">
+      <a href="../../features/real_time_interaction/" class="md-nav__link">
         
   
   
@@ -412,26 +423,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -444,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Workflow
@@ -458,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/workflow/overview.md" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -481,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/workflow/socket_connection.md" class="md-nav__link">
+      <a href="../socket_connection/" class="md-nav__link">
         
   
   
@@ -504,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/workflow/drag_and_drop.md" class="md-nav__link">
+      <a href="../drag_and_drop/" class="md-nav__link">
         
   
   
@@ -524,10 +540,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../docs/workflow/puzzle_completion.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Puzzle Completion
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -538,6 +576,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server Actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -550,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/workflow/websocket_messages.md" class="md-nav__link">
+      <a href="../websocket_messages/" class="md-nav__link">
         
   
   
@@ -634,6 +710,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server Actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -649,9 +753,17 @@
 
 
 
-  <h1> puzzle completion</h1>
-
-
+<h1 id="puzzle-completion-and-feedback">Puzzle Completion and Feedback<a class="headerlink" href="#puzzle-completion-and-feedback" title="Permanent link">&para;</a></h1>
+<h2 id="client-actions">Client Actions<a class="headerlink" href="#client-actions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Validates the puzzle's correctness by comparing piece positions to the solution.</li>
+<li>Triggers success or failure feedback based on the result.</li>
+</ul>
+<h2 id="server-actions">Server Actions<a class="headerlink" href="#server-actions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Broadcasts puzzle completion status (success or failure) to all participants.</li>
+<li>Updates the state for future interactions.</li>
+</ul>
 
 
 
